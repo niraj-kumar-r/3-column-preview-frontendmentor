@@ -19,4 +19,5 @@ body{
     /* font-family: 'Big Shoulders Display', cursive; */
     font-family: 'Lexend Deca', sans-serif;
     font-size: 0.9375rem;
+    background-color: var(--Very-light-gray);
 }
