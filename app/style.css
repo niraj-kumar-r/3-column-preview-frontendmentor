@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+:root{
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+
+    --Transparent-white : hsla(0, 0%, 100%, 0.75);
+    /*paragraphs-color */
+    --Very-light-gray: hsl(0, 0%, 95%);
+    /* background, headings, buttons */
+}
+
 body{
     /* font-family: 'Big Shoulders Display', cursive; */
     font-family: 'Lexend Deca', sans-serif;
