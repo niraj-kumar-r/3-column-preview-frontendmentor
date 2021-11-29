@@ -13,6 +13,13 @@
     /*paragraphs-color */
     --Very-light-gray: hsl(0, 0%, 95%);
     /* background, headings, buttons */
+
+    --present-parent-background: var(--Very-light-gray);
+    /* very proud of myself, for figuring this one out
+    wasn't sure if it will work, because I didn't know if they read the classes
+    once down the page and then apply the effects in order of elements,
+    or if the class is read everytime it is called
+    on an element */
 }
 
 body{
@@ -34,9 +41,15 @@ body{
 
 .sedan-card{
     width: 100%;
+
     background-color: var(--Bright-orange);
+    --present-parent-background: var(--Bright-orange);
+
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
     padding-left: 13.76%;
     padding-right: 13.76%;
 
@@ -47,10 +60,12 @@ body{
 }
 
 .suv-card{
+    --present-parent-background: var(--Dark-cyan);
 
 }
 
 .luxury-card{
+    --present-parent-background: var(--Very-dark-cyan);
 
 }
 
@@ -58,14 +73,22 @@ h1{
     font-family: 'Big Shoulders Display', cursive;
     font-weight: 700;
     font-size: 2rem;
+    color: var(--Very-light-gray);
     
 
 }
 
 .description{
+    color: var(--Very-light-gray);
 
 }
 
 .learn-more-button{
+    background-color: var(--Very-light-gray);
+    color: var(--present-parent-background);
+
+    padding: 1em 2.5em;
+
+    border-radius: 3em;
 
 }
