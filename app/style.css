@@ -1,0 +1,120 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+
+  --Transparent-white: hsla(0, 0%, 100%, 0.75);
+  /*paragraphs-color */
+  --Very-light-gray: hsl(0, 0%, 95%);
+  /* background, headings, buttons */
+
+  --present-parent-background: var(--Very-light-gray);
+  /* very proud of myself, for figuring this one out
+    wasn't sure if it will work, because I didn't know if they read the classes
+    once down the page and then apply the effects in order of elements,
+    or if the class is read everytime it is called
+    on an element */
+}
+
+body {
+  /* font-family: 'Big Shoulders Display', cursive; */
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.9375rem;
+  background-color: var(--Very-light-gray);
+}
+
+.main-card {
+  width: clamp(15rem, 90vw, 20.5rem);
+  background-color: dodgerblue;
+  display: flex;
+  margin: 5.5rem auto;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+
+.sedan-card {
+  width: 100%;
+
+  background-color: var(--Bright-orange);
+  --present-parent-background: var(--Bright-orange);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding-left: 14%;
+  padding-right: 14%;
+
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.suv-card {
+  width: 100%;
+  background-color: var(--Dark-cyan);
+  --present-parent-background: var(--Dark-cyan);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding-left: 14%;
+  padding-right: 14%;
+}
+
+.luxury-card {
+  width: 100%;
+  background-color: var(--Very-dark-cyan);
+  --present-parent-background: var(--Very-dark-cyan);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+  padding-left: 14.5%;
+  padding-right: 14.5%;
+
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.car-icon {
+  margin: 3rem 0 2.5rem;
+  /* background-color: rebeccapurple; */
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: var(--Very-light-gray);
+  margin: 0;
+  /* background-color: red; */
+}
+
+.description {
+  color: var(--Transparent-white);
+  margin: 2rem 0 2rem;
+  font-weight: 400;
+  line-height: 1.75em;
+}
+
+.learn-more-button {
+  background-color: var(--Very-light-gray);
+  color: var(--present-parent-background);
+
+  padding: 1em 2.5em;
+
+  border-radius: 3em;
+
+  margin-bottom: 3rem;
+}
