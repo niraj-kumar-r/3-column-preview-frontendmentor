@@ -118,3 +118,34 @@ h1 {
 
   margin-bottom: 3rem;
 }
+
+@media screen and (min-width: 47rem){
+  .main-card{
+    /* width: 63.88vw;
+    min-width: 46rem; */
+    width: clamp(46rem, 63.88vw, 100rem);
+    flex-direction: row;
+    align-items: stretch;
+  }
+  
+  .sedan-card,
+  .suv-card,
+  .luxury-card{
+    width: 33.33%;
+    padding-left: 5%;
+    padding-right:  4.5%;
+  }
+
+  .sedan-card{
+    border-radius: 0;
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+  }
+
+  .luxury-card{
+    border-radius: 0;
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+    
+  }
+}
