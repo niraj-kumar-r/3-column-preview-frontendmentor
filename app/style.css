@@ -115,8 +115,17 @@ h1 {
   padding: 1em 2.5em;
 
   border-radius: 3em;
+  border: 0.15em solid transparent;
 
   margin-bottom: 3rem;
+}
+
+.learn-more-button:hover,
+.learn-more-button:focus {
+  cursor: pointer;
+  background-color: var(--present-parent-background);
+  color: var(--Very-light-gray);
+  border: 0.15em solid var(--Very-light-gray);
 }
 
 @media screen and (min-width: 47rem){
