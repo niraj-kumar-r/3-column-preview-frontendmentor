@@ -46,7 +46,7 @@ Users should be able to:
 
 ### What I learned
 
-Proud of my us of --present-parent-background variable. I rename it not only in the root tag, but also in individual card, so thst learn more button can inherit it from them.
+Proud of my use of --present-parent-background variable. I rename it not only in the root tag, but also in individual card, so that learn more button can inherit it from them.
 
 ```css
 :root{
